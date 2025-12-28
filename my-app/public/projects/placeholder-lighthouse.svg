@@ -1,0 +1,17 @@
+<svg width="720" height="440" viewBox="0 0 720 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-lighthouse" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#041C2F" />
+      <stop offset="60%" stop-color="#0C3258" />
+      <stop offset="100%" stop-color="#0F2F47" />
+    </linearGradient>
+    <radialGradient id="beam" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#F8F5DE" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#F8F5DE" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="720" height="440" fill="url(#grad-lighthouse)" />
+  <polygon points="160,440 220,140 280,440" fill="#F8F5DE" fill-opacity="0.4" />
+  <polygon points="200,440 230,200 260,440" fill="#D2ECFF" fill-opacity="0.6" />
+  <ellipse cx="240" cy="160" rx="200" ry="120" fill="url(#beam)" opacity="0.45" />
+</svg>

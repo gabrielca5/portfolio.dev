@@ -1,0 +1,19 @@
+<svg width="720" height="440" viewBox="0 0 720 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-field" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1C16" />
+      <stop offset="100%" stop-color="#1F3B2E" />
+    </linearGradient>
+    <linearGradient id="lines" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B0FFCB" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#B0FFCB" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#B0FFCB" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="440" fill="url(#grad-field)" />
+  <g stroke="url(#lines)" stroke-width="2">
+    <path d="M0 320 Q120 280 240 320 T480 320 T720 320" />
+    <path d="M0 360 Q140 320 280 360 T560 360 T720 360" opacity="0.6" />
+  </g>
+  <circle cx="520" cy="140" r="110" fill="#E3FFD7" fill-opacity="0.12" />
+</svg>
