@@ -30,45 +30,57 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Nebula Motion Kit",
+      title: "SAAS - Confederação Nacional de Saúde",
       description:
-        "Biblioteca de microinterações para motion designers, com presets responsivos e foco em storytelling visual.",
-      year: "2024",
-      tags: ["Motion", "Prototype", "After Effects"],
-      image: "/projects/placeholder-nebula.svg",
-      url: "https://example.com/nebula-motion-kit",
+        "Dashboard interativa para monitoramento de microdados de saúde pública com filtros dinâmicos e visualizações customizadas.",
+      year: "2025",
+      tags: ["React" ,"Flask", "MySQL" , "Prophet" , "Langchain", "Equipes Ágeis"],
+      image: "/projects/print-cnsaude.png",
+      url: "https://frontend-two-topaz-19.vercel.app/",
     },
     {
-      title: "Lighthouse Banking",
+      title: "SAAS - Clínicas de gerenciamento de sono",
       description:
-        "Aplicativo financeiro gamificado que usa luz e sombra para guiar decisões de investimento em tempo real.",
-      year: "2023",
-      tags: ["Product", "UX", "Fintech"],
-      image: "/projects/placeholder-lighthouse.svg",
-      url: "https://example.com/lighthouse-banking",
+        "Formulário inteligente para coleta de dados de pacientes com distúrbios do sono, integrando análise preditiva para recomendações personalizadas.",
+      year: "2025",
+      tags: ["Django", "UX", "SQLITE" , "HEROKU", "Equipes Ágeis"],
+      image: "/projects/print-saas-sono.png",
+      url: "",
     },
     {
-      title: "Aster Studio Reel",
+      title: "Super Fighters - Jogo de Luta 2D",
       description:
-        "Coleção de animações 3D e UI cinematográfica criada para apresentações de pitch e keynotes interativas.",
-      year: "2023",
-      tags: ["3D", "Realtime", "Touch"],
-      image: "/projects/placeholder-aster.svg",
-      url: "https://example.com/aster-studio-reel",
+        "Um jogo de luta 2D multiplayer com personagens únicos, movimentos especiais e modos de jogo variados. Feito em Python com Pygame.",
+      year: "2025",
+      tags: ["Python", "Pygame", "POO", "Equipes Ágeis" ],
+      image: "/projects/print-pygame.png",
+      url: "",
     },
     {
-      title: "Field Notes",
+      title: "Invoice Flow",
       description:
-        "Documentário interativo que combina vídeo, áudio espacial e tipografia cinética para contar histórias locais.",
-      year: "2022",
-      tags: ["Narrativa", "WebGL"],
-      image: "/projects/placeholder-fieldnotes.svg",
-      url: "https://example.com/field-notes",
+        "Aplicação web para gerenciamento de faturas, com upload de documentos, extração automática de dados e geração de relatórios financeiros.",
+      year: "2025",
+      tags: ["Flask", "Langchain" , "MongoDB" , "JavaScript", "Equipes Ágeis"],
+      image: "/projects/print-mini.png",
+      url: "",
     },
   ];
 
-  const deepDiveText =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed diam nonummy nibh euismod.";
+  const deepDiveParagraphs = [
+    "Sou estudante de Ciência da Computação no Insper, no terceiro semestre, com 20 anos, e interesse nas áreas de Backend, Dados e Inteligência Artificial. Ao longo da graduação, venho construindo uma base sólida em programação e aplicando os conceitos aprendidos em projetos acadêmicos.",
+    "Atuo em uma entidade acadêmica voltada ao estudo de Inteligência Artificial, onde aprofundo meus conhecimentos na área e participo de iniciativas técnicas. Tenho experiência com as tecnologias abaixo, sou curioso, organizado, gosto de aprender, tenho bom trabalho em equipe e perfil de liderança, e busco oportunidades para evoluir tecnicamente e contribuir em projetos desafiadores.",
+  ];
+
+  const highlightedTechStack = [
+    "Python",
+    "JavaScript",
+    "TensorFlow",
+    "Pandas",
+    "Git",
+    "MySQL",
+    "MongoDB",
+  ];
 
   const certifications = [
     {
@@ -95,32 +107,61 @@ export default function Home() {
 
   const timelineEntries = [
     {
-      year: "2025",
-      title: "Estágio em Pesquisa Interativa",
-      detail: "Explorando sensores e iluminação responsiva para instalações imersivas em tempo real.",
+      year: "Nov - 2025",
+      title: "Primeiro projeto de Big Data",
+      detail: "Pela primeira vez, trabalhei com grandes volumes de dados, cerca de 100gb de informações por mês de análise, utilizando sqlite e pandas para manipulação e extração de insights relevantes.",
     },
     {
-      year: "2024",
-      title: "Bolsa de Inovação Acadêmica",
-      detail: "Projeto de UI adaptativa com foco em acessibilidade dinâmica e feedback luminoso.",
+      year: "Set - 2025",
+      title: "Ingresso na InsperAI",
+      detail: "Pude fazer parte da primeira turma da InsperAI, entidade acadêmica focada em inteligência artificial, participando de projetos, estudos na área e aprendendo a lidar com a estruturação de uma organização estudantil.",
     },
     {
-      year: "2023",
-      title: "Residência criativa",
-      detail: "Experimentos com WebGL e som espacializados para experiências performáticas.",
+      year: "Jun - 2025",
+      title: "Primeiro Projeto com Django",
+      detail: "Pude entender o desenvolvimento de aplicações web backend utilizando Django integração com bancos de dados e trabalho em equipe.",
     },
     {
-      year: "2022",
-      title: "Primeiro estúdio independente",
-      detail: "Produção de motion reels e ferramentas autorais para equipes híbridas.",
+      year: "Fev - 2025",
+      title: "Iniciando graduação em Ciência da Computação",
+      detail: "Começo do estudo formal em Ciência da Computação no Insper, focando em Python e fundamentos de programação.",
+    },
+  ];
+
+  const siteMapSections = [
+    {
+      id: "sobre-mim",
+      label: "Sobre mim",
+    },
+    {
+      id: "projetos",
+      label: "Projetos",
+    },
+    // {
+    //   id: "certificacoes",
+    //   label: "Certificações",
+    // },
+    {
+      id: "timeline",
+      label: "Linha do tempo",
     },
   ];
 
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const heroSectionClasses = `flex flex-col gap-8 text-center lg:sticky lg:top-0 lg:h-screen lg:justify-between lg:py-14 lg:text-left transition duration-300 ${
     hoveredCard ? "lg:blur-[1px] lg:opacity-80" : ""
   }`;
   const dimmedSection = hoveredCard ? "lg:blur-[0.5px] lg:opacity-85" : "";
+
+  const handleMapClick = (sectionId: string) => {
+    setActiveSection(sectionId);
+    const target = document.getElementById(sectionId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    window.history.replaceState(null, "", `#${sectionId}`);
+  };
 
   return (
     <main className="mx-auto grid min-h-screen max-w-6xl grid-cols-1 gap-12 px-6 pt-10 pb-14 text-slate-100 lg:h-screen lg:grid-cols-[360px_minmax(0,1fr)] lg:overflow-hidden lg:px-12 lg:pt-0">
@@ -137,18 +178,47 @@ export default function Home() {
             />
           </div>
           <p className="text-xs uppercase tracking-[0.65em] text-slate-300/80">
-            Portfólio em construção
+            {/* Portfólio em construção */}
           </p>
           <h1 className="text-4xl font-semibold leading-tight text-slate-50 lg:text-6xl">
             Gabriel Aguiar
           </h1>
+          <nav aria-label="Mapa do site" className="space-y-2">
+            <p className="text-[10px] uppercase tracking-[0.5em] text-slate-400/70">
+            </p>
+            <ul className="space-y-1.5">
+              {siteMapSections.map((section) => {
+                const isActive = activeSection === section.id;
+                return (
+                  <li key={section.id}>
+                    <button
+                      type="button"
+                      onClick={() => handleMapClick(section.id)}
+                      aria-pressed={isActive}
+                      className="group flex w-full items-center gap-3 px-1 py-0.5 text-left"
+                    >
+                      <span
+                        className={`h-[1.5px] rounded-full bg-slate-500 transition-all duration-300 ease-out group-hover:bg-cyan-200 ${
+                          isActive ? "w-12" : "w-6"
+                        }`}
+                        aria-hidden
+                      />
+                      <span className="text-base font-medium text-slate-200 transition group-hover:text-white">
+                        {section.label}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
           <p className="text-lg text-slate-200/85">
-            Sou um estudante de Ciência da Computação apaixonado por criar experiências digitais
-            imersivas que combinam design, tecnologia e narrativa.
+            Sou um estudante de ciências da computação apaixonado por backend, dados e inteligência
+            artificial. <br /> <br /> 
+            Bem-vindo ao meu portfólio!
           </p>
           <p className="text-sm text-slate-400/90">
-            Movimente o cursor para revelar a textura luminosa do cenário e role os projetos para
-            ver cada estudo em detalhe.
+            Explore alguns dos meus projetos recentes e certificações e veja como estou evoluindo na minha jornada acadêmica e profissional.
           </p>
         </div>
 
@@ -171,7 +241,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/gabrielca5"
+            href="https://www.linkedin.com/in/gabrielaguiar"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -188,7 +258,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="mailto:hello@gabriel.dev"
+            href="mailto:gabrielaguiar01@gmail.com"
             aria-label="Email"
             className="text-slate-200 transition hover:text-white"
           >
@@ -220,19 +290,31 @@ export default function Home() {
           className="space-y-12 bg-transparent pr-2 lg:pr-6"
           style={{ backgroundColor: "transparent" }}
         >
-          <div className={`space-y-3 transition duration-300 ${dimmedSection}`}>
+          <div id="sobre-mim" className={`space-y-3 transition duration-300 ${dimmedSection}`}>
             <p className="text-xs uppercase tracking-[0.55em] text-slate-300/70">
-              Imersão completa
+              Sobre mim
             </p>
-            <p className="text-base leading-relaxed text-slate-200/90">
-              {deepDiveText}
-            </p>
+            <div className="space-y-3 text-base leading-relaxed text-slate-200/90">
+              {deepDiveParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {highlightedTechStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-full border border-cyan-200/40 bg-cyan-200/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-100 shadow-[0_8px_25px_rgba(16,132,201,0.25)]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+            </div>
           </div>
 
           <div className="space-y-6">
             <header className={`space-y-2 transition duration-300 ${dimmedSection}`}>
               <p className="text-xs uppercase tracking-[0.4em] text-slate-300/70">
-                Seleção recente
+                Trabalhos
               </p>
               <h2 id="projetos-heading" className="text-2xl font-semibold text-slate-50">
                 Projetos e experimentos interativos
@@ -255,23 +337,24 @@ export default function Home() {
                     key={project.title}
                     onMouseEnter={() => setHoveredCard(project.title)}
                     onMouseLeave={() => setHoveredCard(null)}
-                    className={`group relative overflow-hidden rounded-3xl border bg-transparent p-6 shadow-[0_10px_50px_rgba(3,15,40,0.35)] backdrop-blur-sm transition duration-300 hover:border-cyan-200/70 ${
+                    className={`group relative rounded-3xl border bg-transparent p-6 shadow-[0_10px_50px_rgba(3,15,40,0.35)] backdrop-blur-sm transition duration-300 hover:border-cyan-200/70 ${
                       isActive
                         ? "border-cyan-200/70 shadow-[0_20px_60px_rgba(41,160,255,0.22)]"
                         : "border-transparent"
                     } ${isDimmed ? "blur-[1px] opacity-70" : ""}`}
                   >
-                    <div
-                      className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 ease-out group-hover:opacity-85"
-                      style={{
-                        backgroundImage: `url(${project.image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        filter: "grayscale(5%)",
-                      }}
-                      aria-hidden
-                    />
-                    <div className="pointer-events-none absolute inset-0 bg-slate-950/80 opacity-0 transition duration-500 group-hover:opacity-70" aria-hidden />
+                    <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl" aria-hidden>
+                      <div
+                        className="absolute inset-0 opacity-0 transition duration-500 ease-out group-hover:opacity-85"
+                        style={{
+                          backgroundImage: `url(${project.image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          filter: "grayscale(5%)",
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-slate-950/80 opacity-0 transition duration-500 group-hover:opacity-70" />
+                    </div>
                     <div className="relative z-10">
                       <div className="flex items-center justify-between text-sm text-slate-300/80">
                         <span>{project.year}</span>
@@ -292,7 +375,7 @@ export default function Home() {
                       <p className="mt-2 text-base text-slate-200/85">
                         {project.description}
                       </p>
-                      {project.url && (
+                      {project.url ? (
                         <a
                           href={project.url}
                           target="_blank"
@@ -314,6 +397,10 @@ export default function Home() {
                             <path d="M10 7h7v7" />
                           </svg>
                         </a>
+                      ) : (
+                        <p className="mt-4 text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">
+                          
+                        </p>
                       )}
                     </div>
                   </article>
@@ -322,7 +409,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`space-y-4 ${dimmedSection}`}>
+          {/* <div id="certificacoes" className={`space-y-4 ${dimmedSection}`}>
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs uppercase tracking-[0.4em] text-slate-300/70">Certificações</p>
@@ -344,15 +431,15 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
-          <div className={`space-y-4 ${dimmedSection}`}>
+          <div id="timeline" className={`space-y-4 ${dimmedSection}`}>
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs uppercase tracking-[0.4em] text-slate-300/70">Linha do tempo</p>
                 <h3 className="text-xl font-semibold text-slate-50">Evolução recente</h3>
               </div>
-              <span className="text-sm text-slate-400/90">2022 — 2025</span>
+              <span className="text-sm text-slate-400/90">2025</span>
             </div>
             <ol className="relative space-y-6 border-l border-slate-100/15 pl-6">
               {timelineEntries.map((entry) => (
